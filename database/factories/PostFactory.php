@@ -17,7 +17,8 @@ class PostFactory extends Factory
      */
     public function definition(): array
     {
-        $title = $this->faker->sentence();
+        $title = fake()->unique()->sentence();
+        $content = fake()->paragraphs(asText:true);
         return [
            /*  'title'=>$this->faker->sentence(),
             'slug'=>$this->faker->slug(),
@@ -26,6 +27,10 @@ class PostFactory extends Factory
             'thumbnail'=>$this->faker->imageUrl() */
             'title' => $title,
             'slug' => Str::slug($title),
+            'excerpt' => Str::limit($content,150),
+            'content' => $content,
+            'thumbnail' => fake()->imageUrl,
+
 
 
         ];
