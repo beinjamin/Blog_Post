@@ -107,10 +107,9 @@
                 {{-- Fin du post --}}
 
                 @endforeach
-
+                {{ $posts -> links() }}
 
             </div>
-            {{ $posts -> links() }}
         </main>
     </div>
 </body>
