@@ -86,13 +86,15 @@
                     </div>
                     <div class="flex flex-col items-start mt-5 space-y-5 lg:w-7/12 lg:mt-0 lg:ml-12">
                         <a href="" class="underline font-bold text-slate-900 text-lg">Catégorie</a>
-                        <h1 class="font-bold text-slate-900 text-3xl lg:text-5xl leading-tight">Titre</h1>
+                        <h1 class="font-bold text-slate-900 text-3xl lg:text-5xl leading-tight">{{ $post -> title }}</h1>
                         <ul class="flex flex-wrap gap-2">
                             <li><a href="" class="px-3 py-1 bg-indigo-700 text-indigo-50 rounded-full text-sm">Tag 1</a></li>
                             <li><a href="" class="px-3 py-1 bg-indigo-700 text-indigo-50 rounded-full text-sm">Tag 2</a></li>
                         </ul>
                         <p class="text-xl lg:text-2xl text-slate-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente eaque consectetur rem nulla sit aliquam corporis labore obcaecati qui explicabo ipsum, mollitia ad iure, eligendi id consequuntur earum. Tempore.
+
+                            {{ $post -> excerpt }}
+                            
                         </p>
                         <a href="" class="flex items-center py-5 px-7 font-semibold bg-slate-900 transition text-slate-50 rounded-full">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
@@ -108,6 +110,7 @@
 
 
             </div>
+            {{ $posts -> links() }}
         </main>
     </div>
 </body>
