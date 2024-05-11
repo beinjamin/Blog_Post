@@ -92,11 +92,11 @@
                         </ul>
                         <p class="text-xl lg:text-2xl text-slate-600">
 
-                            {{ !! nl2br($post -> content) }}
+                            {!! nl2br (e($post->content)) !!}
                             
                         </p>
                         
-                      {{ $post -> created_at}}
+                     <time class="text-xs text-slate-400" datatime="{{ $post -> created_at}}"> {{ $post -> created_at}}</time>
 
                     </div>
                 </article>
