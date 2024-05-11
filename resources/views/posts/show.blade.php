@@ -92,7 +92,7 @@
                         </ul>
                         <p class="text-xl lg:text-2xl text-slate-600">
 
-                            {{ $post -> content }}
+                            {{ !! nl2br($post -> content) }}
                             
                         </p>
                         
