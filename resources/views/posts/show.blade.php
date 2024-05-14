@@ -1,7 +1,6 @@
-
-            <div class="space-y-10 md:space-y-16">
-
-
+<x-layout title="{{ $post->title }}">
+  
+   <div class="space-y-10 md:space-y-16">
                 {{-- Début du post --}}
                 <article class="flex flex-col lg:flex-row pb-10 md:pb-16 border-b">
                     <div class="lg:w-5/12">
@@ -29,4 +28,5 @@
                
 
             </div>
+</x-layout>
        
