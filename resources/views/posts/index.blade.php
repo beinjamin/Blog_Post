@@ -5,6 +5,7 @@
             @foreach ($posts as $post )
 
                 {{-- Début du post --}}
+                
                 <article class="flex flex-col lg:flex-row pb-10 md:pb-16 border-b">
                     <div class="lg:w-5/12">
                         <img class="w-full max-h-72 object-cover lg:max-h-none lg:h-full" src="{{ $post -> thumbnail  }}">
