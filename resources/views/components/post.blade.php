@@ -33,7 +33,7 @@
             Lire l'article
         </a>
         @else
-        <time class="text-xs text-slate-400" datatime="{{ $post -> created_at}}"> {{ $post -> created_at->format('d/m/Y H:i:s')}}</time>
+        <time class="text-xs text-slate-400" datatime="{{ $post -> created_at}}"> @datetime($post -> created_at)</time>
 
         @endif
 
